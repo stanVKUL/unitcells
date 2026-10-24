@@ -1,6 +1,6 @@
 // Bewaart de app op het toestel, zodat hij ook zonder internet start.
 // Met internet haalt hij eerst de nieuwste versie op (zo komen updates door).
-const CACHE = 'unitcells-202610241055';
+const CACHE = 'unitcells-202610241608';
 const FILES = ['./', './index.html', './manifest.webmanifest', './icon-192.png', './icon-512.png'];
 self.addEventListener('install', e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(FILES)).then(() => self.skipWaiting()));
